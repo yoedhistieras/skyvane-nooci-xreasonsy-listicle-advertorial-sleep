@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOOCI Relax + Sleep — Advertorial Articles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F3F1E9;
+    --cream-light: #FAFAF8;
+    --ink: #262320;
+    --ink-soft: #4a4744;
+    --ink-muted: #8a8785;
+    --accent-warm: #C4A882;
+    --accent-dark: #3D3529;
+    --radius-card: 12px;
+    --radius-button: 100px;
+    --font-display: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* ── COVER PAGE ── */
+  .cover {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 40px;
+    background: var(--accent-dark);
+    color: var(--cream);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 50%, rgba(196,168,130,0.2) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 20%, rgba(196,168,130,0.1) 0%, transparent 50%);
+  }
+
+  .cover-label {
+    font-family: var(--font-body);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent-warm);
+    margin-bottom: 32px;
+    position: relative;
+  }
+
+  .cover h1 {
+    font-family: var(--font-display);
+    font-size: clamp(42px, 6vw, 80px);
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    position: relative;
+  }
+
+  .cover h1 em {
+    font-style: italic;
+    color: var(--accent-warm);
+  }
+
+  .cover-sub {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgba(243,241,233,0.7);
+    max-width: 480px;
+    margin-bottom: 48px;
+    position: relative;
+  }
+
+  .cover-meta {
+    display: flex;
+    gap: 40px;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cover-meta-item {
+    text-align: center;
+  }
+
+  .cover-meta-item .num {
+    font-family: var(--font-display);
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--accent-warm);
+    display: block;
+  }
+
+  .cover-meta-item .label {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(243,241,233,0.5);
+  }
+
+  /* ── INDEX ── */
+  .index-page {
+    padding: 80px 40px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 40px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(38,35,32,0.12);
+  }
+
+  .index-list {
+    list-style: none;
+  }
+
+  .index-item {
+    display: grid;
+    grid-template-columns: 40px 1fr auto;
+    align-items: baseline;
+    gap: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(38,35,32,0.07);
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+
+  .index-item:hover { opacity: 0.6; }
+
+  .index-num {
+    font-family: var(--font-display);
+    font-size: 13px;
+    color: var(--ink-muted);
+  }
+
+  .index-title {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .index-badges {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .badge {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 100px;
+  }
+
+  .badge-t1 { background: var(--ink); color: var(--cream); }
+  .badge-t2 { background: rgba(38,35,32,0.12); color: var(--ink); }
+  .badge-t3 { background: rgba(38,35,32,0.06); color: var(--ink-muted); }
+  .badge-proven { background: var(--accent-warm); color: var(--accent-dark); }
+  .badge-new { background: transparent; border: 1px solid var(--ink-muted); color: var(--ink-muted); }
+  .badge-trend { background: transparent; border: 1px solid var(--accent-warm); color: var(--accent-warm); }
+
+  /* ── DIVIDER PAGE ── */
+  .divider-page {
+    padding: 60px 40px;
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    page-break-before: always;
+  }
+
+  .divider-page .line { flex: 1; height: 1px; background: rgba(38,35,32,0.15); }
+  .divider-page .tier-label {
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-style: italic;
+    color: var(--ink-muted);
+    white-space: nowrap;
+  }
+
+  /* ── ARTICLE ── */
+  .article {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 40px 100px;
+    border-bottom: 2px solid rgba(38,35,32,0.08);
+  }
+
+  .article-header {
+    margin-bottom: 48px;
+  }
+
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+
+  .article-num {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+
+  .article-dot { color: var(--ink-muted); font-size: 10px; }
+
+  .article-type {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent-warm);
+  }
+
+  .article h1 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 400;
+    line-height: 1.15;
+    margin-bottom: 16px;
+    color: var(--ink);
+  }
+
+  .article h1 em {
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .article-deck {
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--ink-soft);
+    line-height: 1.65;
+    border-left: 2px solid var(--accent-warm);
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+
+  .article-body p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--ink-soft);
+    margin-bottom: 20px;
+  }
+
+  .article-body p strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .reason-block {
+    margin: 36px 0;
+    padding: 28px 32px;
+    background: var(--cream-light);
+    border-radius: var(--radius-card);
+    border-left: 3px solid var(--accent-warm);
+  }
+
+  .reason-number {
+    font-family: var(--font-display);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent-warm);
+    margin-bottom: 8px;
+  }
+
+  .reason-block h3 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+
+  .reason-block p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  .reason-block.nooci-mention {
+    background: var(--accent-dark);
+    border-left-color: var(--accent-warm);
+  }
+
+  .reason-block.nooci-mention .reason-number { color: var(--accent-warm); }
+  .reason-block.nooci-mention h3 { color: var(--cream); }
+  .reason-block.nooci-mention p { color: rgba(243,241,233,0.8); }
+
+  .cta-block {
+    margin-top: 48px;
+    padding: 36px 40px;
+    background: var(--accent-dark);
+    border-radius: var(--radius-card);
+    text-align: center;
+    color: var(--cream);
+  }
+
+  .cta-block p {
+    font-size: 15px;
+    color: rgba(243,241,233,0.75);
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+
+  .cta-block a {
+    display: inline-block;
+    background: var(--accent-warm);
+    color: var(--accent-dark);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: var(--radius-button);
+    transition: opacity 0.2s;
+  }
+
+  .cta-block a:hover { opacity: 0.85; }
+
+  .disclaimer {
+    font-size: 11px;
+    color: var(--ink-muted);
+    margin-top: 32px;
+    line-height: 1.6;
+    font-style: italic;
+  }
+
+  /* ── SUDARSHAN BRIEF ── */
+  .brief-page {
+    background: var(--accent-dark);
+    color: var(--cream);
+    padding: 80px 40px;
+  }
+
+  .brief-inner {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .brief-page .section-label {
+    color: var(--accent-warm);
+    border-color: rgba(196,168,130,0.2);
+    margin-bottom: 48px;
+  }
+
+  .brief-page h2 {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 300;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+
+  .brief-page h2 em { font-style: italic; color: var(--accent-warm); }
+
+  .brief-intro {
+    font-size: 15px;
+    color: rgba(243,241,233,0.65);
+    margin-bottom: 56px;
+    font-weight: 300;
+    line-height: 1.7;
+    max-width: 560px;
+  }
+
+  .brief-global {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 56px;
+  }
+
+  .brief-global-item {
+    padding: 20px 24px;
+    background: rgba(243,241,233,0.06);
+    border-radius: var(--radius-card);
+    border: 1px solid rgba(196,168,130,0.15);
+  }
+
+  .brief-global-item .gkey {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent-warm);
+    margin-bottom: 6px;
+  }
+
+  .brief-global-item .gval {
+    font-size: 14px;
+    color: rgba(243,241,233,0.85);
+    line-height: 1.5;
+  }
+
+  .video-concept {
+    margin-bottom: 32px;
+    padding: 32px;
+    background: rgba(243,241,233,0.04);
+    border-radius: var(--radius-card);
+    border: 1px solid rgba(196,168,130,0.1);
+  }
+
+  .video-concept-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+
+  .video-num {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--accent-warm);
+    line-height: 1;
+    min-width: 32px;
+  }
+
+  .video-concept-title {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--cream);
+  }
+
+  .video-concept-tag {
+    margin-left: auto;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 100px;
+    background: var(--accent-warm);
+    color: var(--accent-dark);
+    white-space: nowrap;
+  }
+
+  .brief-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 8px 16px;
+    margin-bottom: 10px;
+    align-items: start;
+  }
+
+  .brief-key {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent-warm);
+    padding-top: 2px;
+  }
+
+  .brief-val {
+    font-size: 14px;
+    color: rgba(243,241,233,0.75);
+    line-height: 1.6;
+  }
+
+  .brief-val strong { color: var(--cream); font-weight: 500; }
+
+  .hook-box {
+    margin-top: 16px;
+    padding: 16px 20px;
+    background: rgba(196,168,130,0.08);
+    border-radius: 8px;
+    border-left: 2px solid var(--accent-warm);
+  }
+
+  .hook-box .hook-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent-warm);
+    margin-bottom: 6px;
+  }
+
+  .hook-box p {
+    font-size: 14px;
+    font-style: italic;
+    color: rgba(243,241,233,0.85);
+    line-height: 1.55;
+  }
+
+  .donts {
+    margin-top: 48px;
+    padding: 28px 32px;
+    background: rgba(255,80,80,0.06);
+    border-radius: var(--radius-card);
+    border: 1px solid rgba(255,80,80,0.15);
+  }
+
+  .donts h4 {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #e06060;
+    margin-bottom: 16px;
+  }
+
+  .donts ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .donts li {
+    font-size: 14px;
+    color: rgba(243,241,233,0.65);
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.5;
+  }
+
+  .donts li::before {
+    content: '✕';
+    position: absolute;
+    left: 0;
+    color: #e06060;
+    font-size: 11px;
+    top: 2px;
+  }
+
+  @media print {
+    .article, .brief-page, .index-page { page-break-inside: avoid; }
+  }
+
+  @media (max-width: 600px) {
+    .cover { padding: 60px 24px; }
+    .article { padding: 60px 24px 80px; }
+    .brief-global { grid-template-columns: 1fr; }
+    .index-item { grid-template-columns: 32px 1fr; }
+    .index-badges { display: none; }
+    .brief-page { padding: 60px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ COVER -->
+<div class="cover">
+  <div class="cover-label">Skyvane × NOOCI — Creative Intelligence</div>
+  <h1>Relax + Sleep<br><em>Advertorial Articles</em></h1>
+  <p class="cover-sub">10 angle-specific listicle articles for Meta advertorial testing. Each article is written to drive intent, not just awareness.</p>
+  <div class="cover-meta">
+    <div class="cover-meta-item"><span class="num">10</span><span class="label">Articles</span></div>
+    <div class="cover-meta-item"><span class="num">3</span><span class="label">Test Tiers</span></div>
+    <div class="cover-meta-item"><span class="num">5</span><span class="label">UGC Concepts</span></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ INDEX -->
+<div class="index-page">
+  <div class="section-label">Article Index</div>
+  <ul class="index-list">
+    <li class="index-item"><span class="index-num">01</span><span class="index-title">5 Reasons Your Mind Won't Shut Off at Bedtime</span><div class="index-badges"><span class="badge badge-proven">Proven</span><span class="badge badge-t1">T1</span></div></li>
+    <li class="index-item"><span class="index-num">02</span><span class="index-title">5 Reasons You're Exhausted All Day But Can't Sleep at Night</span><div class="index-badges"><span class="badge badge-proven">Proven</span><span class="badge badge-t1">T1</span></div></li>
+    <li class="index-item"><span class="index-num">03</span><span class="index-title">5 Reasons You Wake Up at 3 AM and Can't Fall Back Asleep</span><div class="index-badges"><span class="badge badge-t1">T1</span></div></li>
+    <li class="index-item"><span class="index-num">04</span><span class="index-title">5 Reasons Melatonin Is Making Your Sleep Worse</span><div class="index-badges"><span class="badge badge-t2">T2</span></div></li>
+    <li class="index-item"><span class="index-num">05</span><span class="index-title">5 Reasons You Can't Wind Down After a Stressful Day</span><div class="index-badges"><span class="badge badge-t2">T2</span></div></li>
+    <li class="index-item"><span class="index-num">06</span><span class="index-title">5 Reasons Women Over 40 Can't Sleep (And What TCM Says About It)</span><div class="index-badges"><span class="badge badge-new">New Test</span><span class="badge badge-t2">T2</span></div></li>
+    <li class="index-item"><span class="index-num">07</span><span class="index-title">5 Reasons Moms Never Get a Full Night's Sleep</span><div class="index-badges"><span class="badge badge-new">New Test</span><span class="badge badge-t2">T2</span></div></li>
+    <li class="index-item"><span class="index-num">08</span><span class="index-title">5 Reasons Your Cortisol Is Still High When You're Trying to Sleep</span><div class="index-badges"><span class="badge badge-new">New Test</span><span class="badge badge-t3">T3</span></div></li>
+    <li class="index-item"><span class="index-num">09</span><span class="index-title">5 Things Your 3 AM Wake-Up Is Actually Telling You (TCM Organ Clock)</span><div class="index-badges"><span class="badge badge-new">New Test</span><span class="badge badge-t3">T3</span></div></li>
+    <li class="index-item"><span class="index-num">10</span><span class="index-title">5 Reasons the Chinese Sleep Habit Going Viral Actually Works</span><div class="index-badges"><span class="badge badge-trend">Trend</span><span class="badge badge-t3">T3</span></div></li>
+  </ul>
+</div>
+
+<!-- ═══════════════════════════════════════════ TIER 1 DIVIDER -->
+<div class="divider-page"><div class="line"></div><div class="tier-label">Tier 1 — Test First — Proven Signal</div><div class="line"></div></div>
+
+<!-- ═══ ARTICLE 01 ═══ -->
+<div class="article">
+  <div class="article-header">
+    <div class="article-meta">
+      <span class="article-num">Article 01</span>
+      <span class="article-dot">·</span>
+      <span class="article-type">Proven · T1 · Racing Mind</span>
+    </div>
+    <h1>5 Reasons Your Mind Won't<br><em>Shut Off at Bedtime</em></h1>
+    <p class="article-deck">You're exhausted. Your body is ready. But the moment your head hits the pillow, your brain decides it's the perfect time to revisit every decision you made in 2019.</p>
+  </div>
+  <div class="article-body">
+    <p>You're not imagining it. And you're not alone. Nearly half of all adults report lying awake at night with a mind that simply won't quiet down — not because they aren't tired, but because their nervous system never got the signal that the day was actually over.</p>
+    <p>This isn't a willpower problem. It's a biology problem. Here's what's actually happening.</p>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 01</div>
+      <h3>Your stress response is still running</h3>
+      <p>Your brain doesn't automatically know when work ends and rest begins. The same cortisol spike that helps you meet deadlines during the day stays elevated into the evening if your body never received a clear wind-down signal. The result: a nervous system that's biologically wired for threat-scanning at the exact moment you're trying to rest.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 02</div>
+      <h3>Your brain is processing unfinished loops</h3>
+      <p>The mind has a documented bias toward unfinished tasks — psychologists call it the Zeigarnik Effect. When you lie down, your brain attempts to resolve every open loop from the day: the unanswered email, the conversation that didn't go right, tomorrow's presentation. It's not anxiety. It's your brain doing its job at entirely the wrong time.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 03</div>
+      <h3>Your GABA levels are too low to override the noise</h3>
+      <p>GABA is your brain's primary calming neurotransmitter. When it's abundant, it acts like a volume dial — turning down the background chatter so sleep can come. When it's depleted from chronic stress, that dial stops working. Your thoughts don't feel louder. They actually are louder, because nothing is quieting them.</p>
+    </div>
+
+    <div class="reason-block nooci-mention">
+      <div class="reason-number">Reason 04</div>
+      <h3>You're trying to force sleep instead of earning it</h3>
+      <p>Most sleep solutions attack the symptom — they knock you out. What Traditional Chinese Medicine understood 2,000 years ago is that sustainable sleep comes from restoring the conditions the body needs to wind down on its own. That's the idea behind NOOCI Relax + Sleep: a melatonin-free formula built around Red Date, Poria Mushroom, GABA, and four other calming herbs that work together to quiet the nervous system from the inside — not override it. Your body already knows how to sleep. This helps it remember.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 05</div>
+      <h3>Your wind-down routine isn't reaching the nervous system</h3>
+      <p>Dimming lights, putting down your phone, reading before bed — all useful. But if your nervous system is still in fight-or-flight, no external ritual will fully compensate. The calming signal needs to come from inside. External rituals are the environment. Internal support is what completes the signal.</p>
+    </div>
+
+    <p>The good news: none of this is permanent. Your nervous system is trainable. The wired-at-bedtime feeling isn't your baseline — it's a pattern. And patterns can change.</p>
+  </div>
+  <div class="cta-block">
+    <p>NOOCI Relax + Sleep is melatonin-free, non-habit forming, and rooted in 2,000 years of TCM wisdom. Try it risk-free for 30 days.</p>
+    <a href="https://mynooci.com/products/relax-sleep">Explore Relax + Sleep →</a>
+  </div>
+  <p class="disclaimer">*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+</div>
+
+<!-- ═══ ARTICLE 02 ═══ -->
+<div class="article">
+  <div class="article-header">
+    <div class="article-meta">
+      <span class="article-num">Article 02</span>
+      <span class="article-dot">·</span>
+      <span class="article-type">Proven · T1 · Chronic Exhaustion</span>
+    </div>
+    <h1>5 Reasons You're Exhausted All Day<br><em>But Can't Sleep at Night</em></h1>
+    <p class="article-deck">The cruelest kind of tired: too depleted to function, too wired to rest. If this sounds familiar, there's a physiological reason — and it's not what most people think.</p>
+  </div>
+  <div class="article-body">
+    <p>Wired and tired is not a personality trait. It's a stress response pattern that's become so common it almost feels normal. It isn't. Here's what's driving it — and why more sleep doesn't always fix it.</p>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 01</div>
+      <h3>Your adrenal system is running on fumes</h3>
+      <p>Chronic stress depletes the adrenal glands — the system responsible for managing your cortisol output. When this happens, your body loses the ability to properly regulate its energy across the day. You feel exhausted in the afternoon when you need to be alert, and paradoxically wired at night when you need to be calm. It's not laziness. It's dysregulation.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 02</div>
+      <h3>Poor sleep creates a debt that more sleep can't repay</h3>
+      <p>Each night of fragmented or insufficient sleep compounds. Your body processes emotional memory, clears metabolic waste, and repairs tissue during deep sleep. If you're not reaching those stages consistently, you accumulate a debt that one good night won't clear. The exhaustion you feel isn't from today. It's from the last six months.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 03</div>
+      <h3>Your nervous system never fully recovered from the day</h3>
+      <p>The sympathetic nervous system (fight-or-flight) and parasympathetic nervous system (rest-and-digest) are supposed to balance each other. For many people running on chronic stress, the sympathetic side dominates — keeping the body in a low-grade alert state even during rest. You sleep, but you don't recover.</p>
+    </div>
+
+    <div class="reason-block nooci-mention">
+      <div class="reason-number">Reason 04</div>
+      <h3>You're supporting sleep, but not the nervous system behind it</h3>
+      <p>Most sleep supplements target sleep onset. Fewer address the nervous system state that makes restoration possible in the first place. NOOCI Relax + Sleep was formulated for exactly this gap. Bupleurum Root and Licorice Root help balance the stress response. Poria Mushroom has been linked in research to longer total sleep time and fewer nighttime awakenings. GABA supports the calming pathway your nervous system needs to shift gears. It's not about knocking you out. It's about helping your body actually recover.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 05</div>
+      <h3>The exhaustion is a signal, not just a symptom</h3>
+      <p>In Traditional Chinese Medicine, persistent fatigue paired with poor sleep often points to a deficiency in what practitioners call Heart and Spleen Qi — the energy systems governing emotional processing and nourishment. The solution isn't to push through. It's to replenish. Rest isn't laziness. It's the treatment.</p>
+    </div>
+
+    <p>The wired-and-tired cycle is one of the most common patterns in modern life. It's also one of the most addressable — once you stop trying to fight your biology and start working with it.</p>
+  </div>
+  <div class="cta-block">
+    <p>NOOCI Relax + Sleep. Melatonin-free. Non-habit forming. 30-day satisfaction guarantee.</p>
+    <a href="https://mynooci.com/products/relax-sleep">Explore Relax + Sleep →</a>
+  </div>
+  <p class="disclaimer">*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+</div>
+
+<!-- ═══ ARTICLE 03 ═══ -->
+<div class="article">
+  <div class="article-header">
+    <div class="article-meta">
+      <span class="article-num">Article 03</span>
+      <span class="article-dot">·</span>
+      <span class="article-type">PDP-Validated · T1 · 3 AM Wake-Up</span>
+    </div>
+    <h1>5 Reasons You Wake Up at 3 AM<br><em>and Can't Fall Back Asleep</em></h1>
+    <p class="article-deck">You fell asleep fine. Then your eyes opened at 3:17 AM and that was it — lying there, watching the ceiling, counting down how many hours are left before the alarm.</p>
+  </div>
+  <div class="article-body">
+    <p>Waking in the middle of the night and failing to return to sleep is one of the most frustrating sleep experiences — and one of the most misunderstood. It's not random. It's a signal. Here's what your body is actually trying to tell you.</p>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 01</div>
+      <h3>Your blood sugar dropped</h3>
+      <p>Blood sugar naturally dips in the early morning hours. When it drops too low, your body releases adrenaline and cortisol to compensate — effectively waking you up as a survival mechanism. This is especially common if you ate dinner early, had alcohol in the evening, or have any degree of blood sugar instability. The 3 AM wakeup often has nothing to do with stress and everything to do with metabolic timing.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 02</div>
+      <h3>Your cortisol is rising too early</h3>
+      <p>Cortisol follows a natural rhythm — it should be lowest between midnight and 3 AM, then begin rising around 6 AM to prepare you for waking. In people under chronic stress, this rhythm shifts forward. Cortisol begins spiking at 3 AM instead of 6 AM, pulling you out of deep sleep at exactly the wrong time.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 03</div>
+      <h3>You're not reaching deep sleep early enough</h3>
+      <p>Deep, restorative sleep is front-loaded — most of it happens in the first half of the night. REM sleep (dream sleep, emotional processing) dominates the second half. If your nervous system is dysregulated and you're not reaching deep sleep quickly, your body tries to compensate by extending lighter sleep stages into the early morning — making you more vulnerable to waking.</p>
+    </div>
+
+    <div class="reason-block nooci-mention">
+      <div class="reason-number">Reason 04</div>
+      <h3>Your nervous system needs support through the night, not just at sleep onset</h3>
+      <p>Most sleep supplements focus on falling asleep. The 3 AM wake-up is a different problem — it's about staying asleep. NOOCI Relax + Sleep addresses both. Poria Mushroom has been studied for its ability to reduce nighttime awakenings, not just help with sleep onset. Cinnamon Twig supports healthy blood sugar metabolism — directly relevant to the cortisol-spike mechanism behind early morning waking. The formula was designed to support the full arc of sleep, not just the first hour.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 05</div>
+      <h3>TCM mapped this exact pattern 2,000 years ago</h3>
+      <p>In Traditional Chinese Medicine, the hours between 1 AM and 3 AM correspond to the Liver meridian — governing emotional detoxification, stress processing, and the smooth flow of Qi through the body. Waking consistently during this window has long been interpreted as a sign that the body's emotional and stress-processing systems are overloaded. The solution in TCM isn't sedation. It's restoration — replenishing the systems that are struggling.</p>
+    </div>
+
+    <p>If you're waking at the same time every night, your body is trying to communicate something. The good news: it's a pattern that responds well to the right internal support.</p>
+  </div>
+  <div class="cta-block">
+    <p>NOOCI Relax + Sleep. Formulated for the full night — not just the first hour. Melatonin-free. Try it risk-free.</p>
+    <a href="https://mynooci.com/products/relax-sleep">Explore Relax + Sleep →</a>
+  </div>
+  <p class="disclaimer">*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════ TIER 2 DIVIDER -->
+<div class="divider-page"><div class="line"></div><div class="tier-label">Tier 2 — Test Second — Strategic Priority</div><div class="line"></div></div>
+
+<!-- ═══ ARTICLE 04 ═══ -->
+<div class="article">
+  <div class="article-header">
+    <div class="article-meta">
+      <span class="article-num">Article 04</span>
+      <span class="article-dot">·</span>
+      <span class="article-type">PDP-Validated · T2 · Melatonin Trap</span>
+    </div>
+    <h1>5 Reasons Melatonin Is<br><em>Making Your Sleep Worse</em></h1>
+    <p class="article-deck">It's the most popular sleep supplement in America. It's also one of the most misunderstood — and for many people, it's quietly making the underlying problem harder to solve.</p>
+  </div>
+  <div class="article-body">
+    <p>Melatonin isn't bad. But the way most people take it — wrong dose, wrong time, as a long-term solution — can undermine the very system it's supposed to support. Here's what the research actually says.</p>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 01</div>
+      <h3>Most people take 10x more than they need</h3>
+      <p>The standard over-the-counter melatonin dose is 5-10mg. The dose shown in research to be effective for sleep onset is 0.1-0.3mg — up to 100 times less. Higher doses don't create more sleep benefit. They create next-day grogginess, hormone feedback disruption, and a body that starts relying on external signals instead of producing its own. More is not better. It's often the problem.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 02</div>
+      <h3>It addresses timing, not the underlying cause</h3>
+      <p>Melatonin signals to your brain that it's dark and time to sleep. That's it. If your cortisol is elevated, your nervous system is in overdrive, or your mind is racing — melatonin doesn't touch any of that. It's a timing signal, not a calming agent. Taking it when your core problem is stress or nervous system dysregulation is like adjusting your alarm while your house is on fire.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 03</div>
+      <h3>Long-term use can suppress your natural production</h3>
+      <p>Your body produces melatonin naturally — but like any hormone, external supplementation over time can signal the body to produce less of its own. This is well-documented in other hormones. The research on melatonin specifically is still evolving, but consistent high-dose supplementation carries real risk of diminishing the natural production your body should be maintaining on its own.</p>
+    </div>
+
+    <div class="reason-block nooci-mention">
+      <div class="reason-number">Reason 04</div>
+      <h3>There's a smarter approach that works with your body instead of overriding it</h3>
+      <p>This is exactly why NOOCI Relax + Sleep was formulated without melatonin. Instead of overriding your body's natural sleep signaling, it supports the nervous system conditions that make sleep possible: GABA to quiet the brain, Poria Mushroom to support sleep depth and duration, Bupleurum Root to help balance the stress response, Red Date and Fu Xiao Mai to nourish the calm that deep sleep requires. Your body already produces melatonin. NOOCI creates the conditions where that melatonin can actually do its job.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 05</div>
+      <h3>The hangover is a sign something went wrong, not right</h3>
+      <p>Waking up groggy after melatonin isn't a side effect to push through — it's feedback. It means the dose was too high, the timing was off, or your body didn't cycle through sleep stages correctly. Restorative sleep should leave you feeling better than you did the night before. If it doesn't, the solution isn't the same thing in a higher dose.</p>
+    </div>
+
+    <p>The goal isn't to force sleep. It's to restore the conditions your body needs to sleep on its own. That distinction changes everything about which solution actually works.</p>
+  </div>
+  <div class="cta-block">
+    <p>NOOCI Relax + Sleep. Zero melatonin. Non-habit forming. Works with your body — not around it.</p>
+    <a href="https://mynooci.com/products/relax-sleep">Explore Relax + Sleep →</a>
+  </div>
+  <p class="disclaimer">*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+</div>
+
+<!-- ═══ ARTICLE 05 ═══ -->
+<div class="article">
+  <div class="article-header">
+    <div class="article-meta">
+      <span class="article-num">Article 05</span>
+      <span class="article-dot">·</span>
+      <span class="article-type">Strategic · T2 · Stress-Sleep Loop</span>
+    </div>
+    <h1>5 Reasons You Can't Wind Down<br><em>After a Stressful Day</em></h1>
+    <p class="article-deck">The day is done. You should be able to relax. But your body didn't get that message — and the gap between "done with work" and "actually able to rest" keeps getting wider.</p>
+  </div>
+  <div class="article-body">
+    <p>The ability to shift from alert to calm is a skill your nervous system is supposed to perform automatically. For many people, chronic stress has disrupted that mechanism. Understanding why is the first step to fixing it.</p>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 01</div>
+      <h3>Your body doesn't know the day ended</h3>
+      <p>Modern stress doesn't have a clear off switch. A deadline, a difficult email, a tense conversation — these activate the same physiological stress response as a physical threat. And unlike a physical threat, they often don't resolve completely. Your body stays primed for the next one. By evening, you're carrying the accumulated activation of every stressor since morning, with no clear discharge point.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 02</div>
+      <h3>Screens are keeping your cortisol elevated</h3>
+      <p>Blue light from screens suppresses melatonin — that part is well-known. Less discussed is the cognitive stimulation. Scrolling through news, responding to messages, watching something emotionally engaging — all of it keeps the brain's alerting systems active. You can put the phone down at 10 PM and your nervous system will still be running the content you just consumed for another hour.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 03</div>
+      <h3>You're treating wind-down as a behavior when it's also a chemistry problem</h3>
+      <p>Dim lights, a bath, a calming podcast — all of these send helpful external signals. But if the internal chemistry isn't there to receive those signals, the rituals plateau. Your parasympathetic nervous system needs neurotransmitter support to override the sympathetic activation that's been running all day. The ritual is the environment. The chemistry is what makes the environment work.</p>
+    </div>
+
+    <div class="reason-block nooci-mention">
+      <div class="reason-number">Reason 04</div>
+      <h3>The right internal support makes the external ritual actually land</h3>
+      <p>NOOCI Relax + Sleep was designed for exactly this transition moment — the hour before bed when your body needs to shift gears but hasn't been able to. Bupleurum Root helps balance emotional tension and stress response. GABA (420mg) supports the calming neurotransmitter pathway that quiets the day's noise. Fu Xiao Mai has been used in TCM specifically for soothing mental restlessness. Taken 30-60 minutes before sleep, it works alongside your existing routine — not instead of it.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 05</div>
+      <h3>The stress-sleep loop is self-reinforcing — until you interrupt it</h3>
+      <p>Poor wind-down leads to poor sleep. Poor sleep increases cortisol the next day. Higher daytime cortisol makes wind-down harder that evening. This cycle doesn't break on its own — it deepens. The intervention point is the evening transition: if you can consistently create the conditions for genuine wind-down, the entire cycle begins to stabilize.</p>
+    </div>
+
+    <p>You're not bad at relaxing. Your nervous system has been running a program that's hard to interrupt without the right support. That's solvable.</p>
+  </div>
+  <div class="cta-block">
+    <p>NOOCI Relax + Sleep. The internal complement to your evening ritual. Melatonin-free. Try risk-free for 30 days.</p>
+    <a href="https://mynooci.com/products/relax-sleep">Explore Relax + Sleep →</a>
+  </div>
+  <p class="disclaimer">*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+</div>
+
+<!-- ═══ ARTICLE 06 ═══ -->
+<div class="article">
+  <div class="article-header">
+    <div class="article-meta">
+      <span class="article-num">Article 06</span>
+      <span class="article-dot">·</span>
+      <span class="article-type">New Test · T2 · Perimenopause</span>
+    </div>
+    <h1>5 Reasons Women Over 40<br><em>Can't Sleep (And What TCM Says About It)</em></h1>
+    <p class="article-deck">The sleep you had in your 30s isn't the sleep you're getting now — and it's not in your head. There are real, specific reasons why sleep changes in perimenopause, and most advice misses all of them.</p>
+  </div>
+  <div class="article-body">
+    <p>Sleep disruption is one of the most common but least discussed symptoms of perimenopause. Up to 60% of women in this transition report significant sleep problems. Here's what's actually driving it.</p>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 01</div>
+      <h3>Estrogen decline disrupts your sleep architecture</h3>
+      <p>Estrogen plays a direct role in regulating sleep — it affects serotonin production, which in turn affects melatonin signaling and REM sleep. As estrogen fluctuates and declines during perimenopause, the entire sleep cycle becomes less stable. You may fall asleep fine but experience more fragmented, lighter sleep — or find yourself waking earlier than you want to and being unable to return to sleep.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 02</div>
+      <h3>Night sweats are waking you up — and what happens after is the real problem</h3>
+      <p>Hot flashes and night sweats are well-known. Less discussed is what happens after one wakes you up at 2 AM: your cortisol spikes, your heart rate rises, and your nervous system — now fully alert — has to travel the entire path back to sleep. For women whose calming mechanisms are already taxed, that return journey can take an hour or more. Or not happen at all.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 03</div>
+      <h3>Progesterone loss removes your natural sleep aid</h3>
+      <p>Progesterone has calming, sleep-promoting properties — it activates the same GABA receptors that many sleep medications target. As progesterone declines in perimenopause, you lose a significant internal source of nervous system calm. This is why many women in this transition describe feeling more anxious at night, more prone to racing thoughts, and less able to "turn off" — even if they never felt that way in their 30s.</p>
+    </div>
+
+    <div class="reason-block nooci-mention">
+      <div class="reason-number">Reason 04</div>
+      <h3>TCM has been addressing this pattern for 2,000 years</h3>
+      <p>In Traditional Chinese Medicine, the sleep and emotional disruptions of menopause transition are understood as a depletion of Yin — the cooling, nourishing energy that keeps the body stable and calm. The herbs in NOOCI Relax + Sleep were selected with this in mind: Red Date (Jujube) nourishes the Blood and calms the Shen (mind); Poria Mushroom supports emotional equilibrium and has research behind its ability to reduce nighttime awakenings; GABA directly supports the calming receptor pathway that progesterone once filled. This is not a sedative. It's a restorative formula designed to support what the body has stopped producing enough of on its own.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 05</div>
+      <h3>The standard advice doesn't account for this stage of life</h3>
+      <p>Generic sleep hygiene advice — consistent bedtime, no caffeine after noon, dark room — is not wrong. But it was developed for a general population and doesn't account for the hormonal and neurological shifts specific to perimenopause. Women in this transition often do everything right and still sleep badly. The missing piece isn't discipline. It's physiological support that meets the body where it actually is.</p>
+    </div>
+
+    <p>This stage of life is real. The sleep disruption is not a character flaw or a sign of weakness. It's a physiological transition that benefits from physiological support — not just behavioral adjustment.</p>
+  </div>
+  <div class="cta-block">
+    <p>NOOCI Relax + Sleep. TCM-rooted. Melatonin-free. Formulated for rest that actually restores.</p>
+    <a href="https://mynooci.com/products/relax-sleep">Explore Relax + Sleep →</a>
+  </div>
+  <p class="disclaimer">*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+</div>
+
+<!-- ═══ ARTICLE 07 ═══ -->
+<div class="article">
+  <div class="article-header">
+    <div class="article-meta">
+      <span class="article-num">Article 07</span>
+      <span class="article-dot">·</span>
+      <span class="article-type">New Test · T2 · Mom Running on Empty</span>
+    </div>
+    <h1>5 Reasons Moms Never Get<br><em>a Full Night's Sleep</em></h1>
+    <p class="article-deck">It starts with the newborn phase. For many mothers, it never fully stops — even when the kids sleep through the night. Here's why, and what's actually happening in your body.</p>
+  </div>
+  <div class="article-body">
+    <p>Maternal sleep deprivation is one of the most normalized forms of exhaustion in modern life. It's also one of the most physiologically complex. "Sleep when they sleep" doesn't cover it.</p>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 01</div>
+      <h3>Your nervous system learned to stay alert — and never fully unlearned it</h3>
+      <p>The early months of motherhood train your nervous system to stay hypervigilant: every sound, every breath monitor alert, every cry. This is adaptive biology at work — your brain genuinely rewires to prioritize infant cues. The problem is that this hypervigilance often persists long after the child is sleeping through the night. Your nervous system doesn't automatically downgrade the threat level. You have to actively restore it.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 02</div>
+      <h3>Fragmented sleep compounds differently than short sleep</h3>
+      <p>Waking twice for 20 minutes each time is not the same as losing 40 minutes of sleep. Fragmented sleep interrupts sleep cycles — particularly the deep slow-wave sleep and REM stages where physical recovery and emotional processing happen. A mother who sleeps 7 hours but wakes twice may be getting the physiological benefit of only 4-5. The math doesn't work in her favor, and no amount of catching up on weekends fully compensates.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 03</div>
+      <h3>Mental load doesn't go to sleep when you do</h3>
+      <p>The cognitive load of parenting — tracking schedules, anticipating needs, managing logistics — doesn't pause at bedtime. For many mothers, the moment the house goes quiet is the first moment the brain has time to process everything it couldn't process during the day. Bedtime becomes inadvertent processing time. The mind runs through tomorrow's tasks, today's worries, and the things that slipped through the cracks. It's not anxiety. It's a backlog.</p>
+    </div>
+
+    <div class="reason-block nooci-mention">
+      <div class="reason-number">Reason 04</div>
+      <h3>Your body needs restoration support, not just sleep opportunity</h3>
+      <p>The challenge for mothers isn't usually the opportunity to sleep — it's the quality of sleep that's available. This is where NOOCI Relax + Sleep was built to help. Fu Xiao Mai and Red Date have been used in TCM specifically for the kind of emotional depletion and mental restlessness that comes with sustained caretaking. Poria Mushroom helps reduce nighttime awakenings. GABA supports the nervous system's ability to actually descend into deep sleep rather than hover in light sleep. This is about helping the sleep you have go deeper — not just longer.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 05</div>
+      <h3>You've been last on the list so long your body has adapted to it</h3>
+      <p>Chronic under-recovery changes your baseline. The body adapts to running on less — but it pays a price in immune function, emotional regulation, and cognitive capacity. Many mothers don't even remember what genuinely rested feels like. That's not a sign that this is your new normal. It's a sign that the deficit has been running long enough to feel normal.</p>
+    </div>
+
+    <p>The sleep you had before children is retrievable. Not instantly, and not through willpower alone — but with the right internal support and consistency, your body can relearn how to rest deeply.</p>
+  </div>
+  <div class="cta-block">
+    <p>NOOCI Relax + Sleep. For the sleep that actually restores. Melatonin-free. Try it risk-free for 30 days.</p>
+    <a href="https://mynooci.com/products/relax-sleep">Explore Relax + Sleep →</a>
+  </div>
+  <p class="disclaimer">*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════ TIER 3 DIVIDER -->
+<div class="divider-page"><div class="line"></div><div class="tier-label">Tier 3 — Test Third — Education & Trend</div><div class="line"></div></div>
+
+<!-- ═══ ARTICLE 08 ═══ -->
+<div class="article">
+  <div class="article-header">
+    <div class="article-meta">
+      <span class="article-num">Article 08</span>
+      <span class="article-dot">·</span>
+      <span class="article-type">New Test · T3 · Cortisol / Nervous System</span>
+    </div>
+    <h1>5 Reasons Your Cortisol Is Still High<br><em>When You're Trying to Sleep</em></h1>
+    <p class="article-deck">Cortisol isn't just a stress hormone. It's the thing standing between you and deep sleep — and most people have no idea it's the reason they can't wind down.</p>
+  </div>
+  <div class="article-body">
+    <p>Cortisol follows a precise daily rhythm. When that rhythm is disrupted — which chronic stress does reliably — the consequences show up most clearly at night. Here's the mechanism most sleep advice never explains.</p>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 01</div>
+      <h3>Cortisol and melatonin are in direct opposition</h3>
+      <p>These two hormones follow opposing curves across the day. Melatonin rises as cortisol falls in the evening, signaling to your brain that it's time to sleep. When cortisol doesn't fall on schedule — because stress kept it elevated — melatonin can't rise properly. This is why stressed people often feel "not tired" at 11 PM even when they've been running on 6 hours for weeks. The hormone signal for sleepiness is being blocked.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 02</div>
+      <h3>Late-day habits are spiking your cortisol without you noticing</h3>
+      <p>Caffeine after 2 PM, intense exercise after 7 PM, a stressful work call at 6 PM, checking email at 9 PM — each of these triggers a measurable cortisol response. They feel minor in the moment. By the time you're trying to sleep at midnight, you're carrying the accumulated cortisol of half a dozen small spikes that never fully resolved. The evening routine matters more than most people realize.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 03</div>
+      <h3>Chronic stress flattens your cortisol curve</h3>
+      <p>Healthy cortisol follows a clear curve: high in the morning, declining through the day, low at night. Chronic stress flattens this curve — cortisol stays moderately elevated around the clock rather than following its natural rhythm. The result is a nervous system that's never fully alert and never fully calm. You feel foggy during the day and wired at night — not because cortisol is spiking, but because it never fully drops.</p>
+    </div>
+
+    <div class="reason-block nooci-mention">
+      <div class="reason-number">Reason 04</div>
+      <h3>Supporting the stress response directly changes the sleep equation</h3>
+      <p>This is the logic behind NOOCI Relax + Sleep's formula. Rather than addressing sleep symptomatically, it targets the cortisol-adjacent systems that determine whether sleep is even physiologically accessible. Bupleurum Root has been used in TCM for centuries to support the smooth flow of Qi and ease stress-related tension — directly relevant to cortisol dysregulation. Licorice Root supports the adrenal system. GABA supports the neurotransmitter pathway that calming systems rely on to override alerting ones. Lower the cortisol environment, and sleep becomes possible without forcing it.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 05</div>
+      <h3>You can't "relax" your cortisol down through willpower</h3>
+      <p>Taking deep breaths, thinking positive thoughts, telling yourself to calm down — these have limited physiological effect on cortisol. Cortisol responds to real chemical signals in the body, not instructions. Managing it requires addressing the inputs (stress load, timing of stimulants, recovery practices) and supporting the systems responsible for its metabolism and clearance. It's chemistry. Treat it like chemistry.</p>
+    </div>
+
+    <p>Sleep is downstream of cortisol. Fix the cortisol environment and you change what sleep is possible. That's the lever most people have never been shown.</p>
+  </div>
+  <div class="cta-block">
+    <p>NOOCI Relax + Sleep. Addresses the system behind sleep, not just the symptom. Melatonin-free. 30-day guarantee.</p>
+    <a href="https://mynooci.com/products/relax-sleep">Explore Relax + Sleep →</a>
+  </div>
+  <p class="disclaimer">*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+</div>
+
+<!-- ═══ ARTICLE 09 ═══ -->
+<div class="article">
+  <div class="article-header">
+    <div class="article-meta">
+      <span class="article-num">Article 09</span>
+      <span class="article-dot">·</span>
+      <span class="article-type">New Test · T3 · TCM Organ Clock</span>
+    </div>
+    <h1>5 Things Your 3 AM Wake-Up<br><em>Is Actually Telling You</em></h1>
+    <p class="article-deck">In Traditional Chinese Medicine, waking at the same time every night is not random. The TCM Organ Clock maps every hour of sleep to a specific system in the body — and what it's processing while you're supposed to be resting.</p>
+  </div>
+  <div class="article-body">
+    <p>The TCM Organ Clock is a 2,000-year-old diagnostic framework that assigns two-hour windows of the night to specific organ systems. Modern sleep research has independently confirmed that different physiological processes dominate different sleep phases. The overlap is striking. Here's how to read your wake-up time.</p>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 01</div>
+      <h3>11 PM – 1 AM: Gallbladder — Decision fatigue and unresolved choices</h3>
+      <p>The Gallbladder in TCM governs decision-making, courage, and the ability to process and release the day's choices. Waking or struggling to fall asleep in this window often signals mental rumination — the inability to let go of decisions, worry about tomorrow, or unresolved uncertainty. Sound familiar? This is the window most commonly associated with the racing mind that won't let you fall asleep in the first place.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 02</div>
+      <h3>1 AM – 3 AM: Liver — Emotional detoxification and stress processing</h3>
+      <p>The Liver meridian governs the smooth flow of Qi and is responsible for emotional processing, detoxification, and the release of frustration or unresolved stress. Waking consistently between 1 and 3 AM is one of the most reported patterns in people under chronic stress. In TCM, this window is when the Liver is most actively processing. If the system is overloaded — with stress, alcohol, emotional suppression — it surfaces during sleep as waking.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 03</div>
+      <h3>3 AM – 5 AM: Lung — Grief, boundary-setting, and letting go</h3>
+      <p>The Lung meridian in TCM is associated with grief, sadness, and the ability to release what no longer serves. Waking in this window can correspond to unprocessed loss, emotional heaviness, or a period of significant transition. This is also the window where cortisol naturally begins to rise — early morning cortisol surges that pull you out of sleep before you're ready are both a TCM Lung imbalance signal and a modern stress marker.</p>
+    </div>
+
+    <div class="reason-block nooci-mention">
+      <div class="reason-number">Reason 04</div>
+      <h3>The herbs in NOOCI map directly to the organ systems involved</h3>
+      <p>This is not coincidence — it's formula design. Red Date (Jujube) nourishes Heart Blood and directly supports the Liver's ability to calm the Shen (mind-spirit) during sleep. Poria Mushroom has been used in TCM specifically for calming the Heart meridian and reducing nighttime awakenings — precisely the Gallbladder and Liver window disruptions. Bupleurum Root is a classical Liver-moving herb, used to resolve stagnation and support the smooth Qi flow the Liver needs to process stress during sleep. NOOCI wasn't formulated by accident. It was built on this map.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 05</div>
+      <h3>Modern science has independently arrived at the same framework</h3>
+      <p>Sleep research now confirms that different physiological processes dominate different phases of the night: slow-wave deep sleep (physical repair) dominates the first half, REM sleep (emotional processing, memory consolidation) the second. The organ systems TCM assigned to each window — Liver processing in the 1-3 AM window, Lung activity in the early morning — map onto what we now understand about which biological processes are most active when. Two thousand years of observation arrived at the same conclusions as a century of sleep science. That's not mysticism. That's signal.</p>
+    </div>
+
+    <p>Your wake-up time is data. Once you know how to read it, you can start supporting the systems that are actually struggling — not just the symptom of waking.</p>
+  </div>
+  <div class="cta-block">
+    <p>NOOCI Relax + Sleep. Formulated on the same TCM framework that mapped your sleep 2,000 years ago. Try it risk-free.</p>
+    <a href="https://mynooci.com/products/relax-sleep">Explore Relax + Sleep →</a>
+  </div>
+  <p class="disclaimer">*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+</div>
+
+<!-- ═══ ARTICLE 10 ═══ -->
+<div class="article">
+  <div class="article-header">
+    <div class="article-meta">
+      <span class="article-num">Article 10</span>
+      <span class="article-dot">·</span>
+      <span class="article-type">Trend · T3 · ChinaMaxxing</span>
+    </div>
+    <h1>5 Reasons the Chinese Sleep Habit<br><em>Going Viral Actually Works</em></h1>
+    <p class="article-deck">Millions of people are adding hot water, early dinners, and TCM routines to their evenings — not because it's trendy, but because it works. Here's the science behind why.</p>
+  </div>
+  <div class="article-body">
+    <p>The "ChinaMaxxing" wellness trend is being written off in some corners as a fad. But when you look at the specific behaviors going viral — hot water before bed, earlier dinner timing, acupressure routines — the research backs every single one. Here's why these habits improve sleep, explained without the mysticism.</p>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 01</div>
+      <h3>Hot water before bed triggers sleep-onset cooling</h3>
+      <p>Your body temperature needs to drop by 1-2°F to initiate sleep. Drinking warm water or bathing in warm water elevates surface temperature, which paradoxically triggers your body to release heat through your skin — accelerating the core temperature drop needed for sleep onset. This is why a warm drink before bed is associated with faster sleep onset. The mechanism is real, documented, and completely consistent with what TCM practitioners have recommended for centuries.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 02</div>
+      <h3>Earlier dinner timing aligns with your liver's peak processing window</h3>
+      <p>Eating earlier in the evening — a common TCM and now increasingly mainstream recommendation — allows your digestive system to complete its primary work before sleep begins. Your liver and digestive organs are most active in the evening and early night. A late, heavy meal forces those systems into active processing mode during the exact hours they're supposed to be quieting down. Earlier eating creates the metabolic conditions sleep requires.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 03</div>
+      <h3>Acupressure points for sleep have measurable physiological effects</h3>
+      <p>The HT7 point (Heart 7, at the wrist crease on the pinky side) is the most researched acupressure point for sleep and anxiety. Multiple controlled studies have found that stimulation of this point reduces heart rate, decreases anxiety scores, and improves sleep quality. The mechanism is thought to involve the vagus nerve — stimulation activates the parasympathetic nervous system, the "rest and digest" response. This is not folklore. It has a physiological explanation.</p>
+    </div>
+
+    <div class="reason-block nooci-mention">
+      <div class="reason-number">Reason 04</div>
+      <h3>These habits work best with internal support</h3>
+      <p>The external TCM sleep habits — hot water, earlier meals, acupressure — create favorable conditions for sleep. NOOCI Relax + Sleep is the internal complement: what you take to support the nervous system that those rituals are trying to calm. Red Date, Poria Mushroom, and Fu Xiao Mai are the same herbs that have appeared in classical TCM sleep formulas for centuries — the internal version of the same tradition that produced the external rituals now going viral. Hot water before bed. NOOCI in that hot water. That's the full picture.</p>
+    </div>
+
+    <div class="reason-block">
+      <div class="reason-number">Reason 05</div>
+      <h3>The trend is going viral because the results are real</h3>
+      <p>Social trends around health come and go. The ones that stick — intermittent fasting, cold exposure, now TCM-adjacent sleep rituals — tend to be the ones that produce observable results quickly. Hot water before bed, earlier dinner, a wind-down routine rooted in TCM: these aren't new. They've been practiced for millennia. The only thing new is that they're being rediscovered by people who tried everything else and found that the oldest answers were the most reliable ones.</p>
+    </div>
+
+    <p>You don't have to subscribe to the trend to benefit from the habits. The biology works regardless of what you call it.</p>
+  </div>
+  <div class="cta-block">
+    <p>NOOCI Relax + Sleep. The internal half of the TCM sleep ritual. Melatonin-free. Try it in hot water or warm milk tonight.</p>
+    <a href="https://mynooci.com/products/relax-sleep">Explore Relax + Sleep →</a>
+  </div>
+  <p class="disclaimer">*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.</p>
+</div>
+
+<!-- ═══════════════════════════════════════════ SUDARSHAN UGC BRIEF -->
+<div class="brief-page">
+  <div class="brief-inner">
+    <div class="section-label">UGC Creator Brief — Sudarshan</div>
+    <h2>NOOCI Relax + Sleep<br><em>AI UGC Video Concepts</em></h2>
+    <p class="brief-intro">First brief for Sudarshan. 5 talking-head concepts — the recommended format for a first-time creator brief. Simple to execute, high trust signal, proven format for sleep supplements on Meta.</p>
+
+    <!-- Global Brief -->
+    <div class="brief-global">
+      <div class="brief-global-item"><div class="gkey">Creator</div><div class="gval">Sudarshan (AI UGC)</div></div>
+      <div class="brief-global-item"><div class="gkey">Format</div><div class="gval">Talking head — face to camera, casual setting</div></div>
+      <div class="brief-global-item"><div class="gkey">Length</div><div class="gval">30–45 seconds per video</div></div>
+      <div class="brief-global-item"><div class="gkey">Placement</div><div class="gval">Meta Feed + Reels (vertical 9:16)</div></div>
+      <div class="brief-global-item"><div class="gkey">Tone</div><div class="gval">Candid, personal, not salesy. Peer-to-peer.</div></div>
+      <div class="brief-global-item"><div class="gkey">Product</div><div class="gval">NOOCI Relax + Sleep — show packet, dissolve in warm liquid</div></div>
+      <div class="brief-global-item"><div class="gkey">Brand guardrail</div><div class="gval">Lifestyle/ritual framing only. Not clinical. Not medical. No "treats" or "cures."</div></div>
+      <div class="brief-global-item"><div class="gkey">CTA</div><div class="gval">Soft close: "worth trying if you've been struggling" — no hard sell</div></div>
+    </div>
+
+    <!-- Video 1 -->
+    <div class="video-concept">
+      <div class="video-concept-header">
+        <span class="video-num">01</span>
+        <span class="video-concept-title">The 3 AM Wakeup</span>
+        <span class="video-concept-tag">T1 — Test First</span>
+      </div>
+      <div class="brief-row"><span class="brief-key">Angle</span><span class="brief-val">Racing Mind / 3 AM Wake-Up</span></div>
+      <div class="brief-row"><span class="brief-key">Persona</span><span class="brief-val">30s–40s, relatable, slightly tired energy (not performative)</span></div>
+      <div class="brief-row"><span class="brief-key">Setting</span><span class="brief-val">Bedroom or kitchen, morning light, casual</span></div>
+      <div class="brief-row"><span class="brief-key">Structure</span><span class="brief-val"><strong>Hook (0–5s):</strong> Problem statement. <strong>Body (5–35s):</strong> Personal story + product mention. <strong>Close (35–45s):</strong> Soft CTA.</span></div>
+      <div class="hook-box">
+        <div class="hook-label">Hook (say this verbatim or close to it)</div>
+        <p>"I was waking up at 3 AM every single night and I had no idea why. I wasn't stressed. I wasn't sick. My body just... wouldn't stay asleep."</p>
+      </div>
+      <div class="brief-row" style="margin-top:16px"><span class="brief-key">Body</span><span class="brief-val">Talk about trying melatonin (felt groggy), trying nothing (kept waking). Then found NOOCI — melatonin-free, TCM herbs. Been taking it for [X weeks]. Started sleeping through. Wake up actually feeling rested. Show the packet dissolving in warm water or milk.</span></div>
+      <div class="brief-row"><span class="brief-key">Close</span><span class="brief-val">"If you're doing the 3 AM math on how many hours you have left, this is worth trying."</span></div>
+    </div>
+
+    <!-- Video 2 -->
+    <div class="video-concept">
+      <div class="video-concept-header">
+        <span class="video-num">02</span>
+        <span class="video-concept-title">Wired But Tired</span>
+        <span class="video-concept-tag">T1 — Test First</span>
+      </div>
+      <div class="brief-row"><span class="brief-key">Angle</span><span class="brief-val">Chronic Exhaustion / Stress-Sleep Loop</span></div>
+      <div class="brief-row"><span class="brief-key">Persona</span><span class="brief-val">Working professional, 30s, relatable life pressure</span></div>
+      <div class="brief-row"><span class="brief-key">Setting</span><span class="brief-val">Home office or couch, evening light</span></div>
+      <div class="hook-box">
+        <div class="hook-label">Hook</div>
+        <p>"I was exhausted all day and then completely wired the second I tried to sleep. For months. I didn't understand how both could be true at the same time."</p>
+      </div>
+      <div class="brief-row" style="margin-top:16px"><span class="brief-key">Body</span><span class="brief-val">Explain the wired-tired cycle in simple terms (stress doesn't turn off automatically). Talk about NOOCI as what helped the nervous system actually shift gears. Emphasize: no melatonin, not habit forming, mixes into warm milk. Show the evening ritual — dim light, packet, warm drink.</span></div>
+      <div class="brief-row"><span class="brief-key">Close</span><span class="brief-val">"I didn't realize how tired I'd been until I actually slept. If that sounds familiar, look it up."</span></div>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="video-concept">
+      <div class="video-concept-header">
+        <span class="video-num">03</span>
+        <span class="video-concept-title">The Melatonin Switch</span>
+        <span class="video-concept-tag">T2 — Test Second</span>
+      </div>
+      <div class="brief-row"><span class="brief-key">Angle</span><span class="brief-val">Melatonin Trap — anti-category positioning</span></div>
+      <div class="brief-row"><span class="brief-key">Persona</span><span class="brief-val">Health-aware, done their research, slightly skeptical tone</span></div>
+      <div class="brief-row"><span class="brief-key">Setting</span><span class="brief-val">Kitchen counter, morning, casual</span></div>
+      <div class="hook-box">
+        <div class="hook-label">Hook</div>
+        <p>"I stopped taking melatonin six months ago and my sleep actually got better. Here's what I switched to and why."</p>
+      </div>
+      <div class="brief-row" style="margin-top:16px"><span class="brief-key">Body</span><span class="brief-val">Briefly explain why high-dose melatonin can cause grogginess and doesn't address the root cause (nervous system, not just timing signal). Position NOOCI as the alternative — TCM herbs, GABA, addresses the actual problem. Keep it educational not preachy — "I didn't know this either."</span></div>
+      <div class="brief-row"><span class="brief-key">Close</span><span class="brief-val">"If melatonin's been leaving you foggy, there's a reason. There's also a fix."</span></div>
+    </div>
+
+    <!-- Video 4 -->
+    <div class="video-concept">
+      <div class="video-concept-header">
+        <span class="video-num">04</span>
+        <span class="video-concept-title">The Perimenopause Sleep Shift</span>
+        <span class="video-concept-tag">T2 — Test Second</span>
+      </div>
+      <div class="brief-row"><span class="brief-key">Angle</span><span class="brief-val">Perimenopause Sleep Disruption — female 40+ demo</span></div>
+      <div class="brief-row"><span class="brief-key">Persona</span><span class="brief-val">Woman, 40s, grounded and direct. Not performative. Talking to a friend.</span></div>
+      <div class="brief-row"><span class="brief-key">Setting</span><span class="brief-val">Bedroom or bathroom vanity, morning</span></div>
+      <div class="hook-box">
+        <div class="hook-label">Hook</div>
+        <p>"Nobody told me that perimenopause would completely wreck my sleep. I thought I just had anxiety. Turns out it's hormonal — and there's something that actually helps."</p>
+      </div>
+      <div class="brief-row" style="margin-top:16px"><span class="brief-key">Body</span><span class="brief-val">Talk about the night sweats, the 3 AM waking, the racing mind that showed up out of nowhere. Mention that estrogen and progesterone changes affect sleep directly. Found NOOCI — TCM herbs that have been used for this transition for centuries. Feels different from melatonin. Not groggy. Actually restorative.</span></div>
+      <div class="brief-row"><span class="brief-key">Close</span><span class="brief-val">"If your sleep changed in your 40s and nobody's explained why — start there."</span></div>
+    </div>
+
+    <!-- Video 5 -->
+    <div class="video-concept">
+      <div class="video-concept-header">
+        <span class="video-num">05</span>
+        <span class="video-concept-title">The Hot Water Ritual</span>
+        <span class="video-concept-tag">T3 — Trend</span>
+      </div>
+      <div class="brief-row"><span class="brief-key">Angle</span><span class="brief-val">ChinaMaxxing / TCM Lifestyle — trend-attached</span></div>
+      <div class="brief-row"><span class="brief-key">Persona</span><span class="brief-val">Curious, wellness-adjacent. Tried the trend, found this naturally.</span></div>
+      <div class="brief-row"><span class="brief-key">Setting</span><span class="brief-val">Kitchen, evening, warm lighting. Show the ritual visually — kettle, mug, packet.</span></div>
+      <div class="hook-box">
+        <div class="hook-label">Hook</div>
+        <p>"I started doing the hot water before bed thing everyone's talking about, and then I found something that makes it actually work."</p>
+      </div>
+      <div class="brief-row" style="margin-top:16px"><span class="brief-key">Body</span><span class="brief-val">Talk about the ChinaMaxxing routine — hot water, earlier dinners, winding down earlier. Found NOOCI, added it to the warm water ritual. Same TCM tradition, internal complement to the external habit. Show mixing the packet into the mug. Keep it visual and ritual-focused. This is lifestyle content, not a product review.</span></div>
+      <div class="brief-row"><span class="brief-key">Close</span><span class="brief-val">"Hot water before bed. NOOCI in that hot water. That's my whole sleep routine now."</span></div>
+    </div>
+
+    <!-- Don'ts -->
+    <div class="donts">
+      <h4>Brand Guardrails — Do Not Include</h4>
+      <ul>
+        <li>No clinical or medical framing — "treats insomnia," "clinically proven," "cures," "diagnoses"</li>
+        <li>No before/after framing with specific health claims ("I used to have insomnia, now I don't")</li>
+        <li>No price or discount mentions in-video</li>
+        <li>No comparison to prescription medications or specific brand competitors by name</li>
+        <li>No exaggerated reactions or performative testimonials — keep it real and peer-to-peer</li>
+        <li>Do not use "ChinaMaxxing" or "becoming Chinese" as paid copy — reference the habits, not the trend name</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
